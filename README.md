@@ -1,16 +1,18 @@
 # election_analysis
 
 ## Project Overview
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election. 
+The Colorado Board of Elections employee has gave us the following tasks to complete the election audit of a recent local congressional election. 
 
-1. Calculate the total number of votes cast. 
-2. Get a complete list of candidates who received votes. 
-3. Calculate the total number of votes each candidate received. 
-4. Calculate the percentage of votes each candidate won.
-5. Determine the winner of the election based on popular vote.
-6. Calculate the percentage and total votes for each county. 
-7. Determine which county had the largest voter turnout. 
-8. Print all of our candidate and county data to a text file.  
+- Calculate the total number of votes cast. 
+- Get a complete list of candidates who received votes. 
+- Calculate the total number of votes each candidate received. 
+- Calculate the percentage of votes each candidate won.
+- Determine the winner of the election based on popular vote.
+
+The Board was pleased with our analysis and requested additional data to complete the audit. 
+- The voter turnout for each county
+- The percentage of voes from each county out of the total count
+- The county with the highest voter turnout 
 
 ## Resources
 - Data Source: election_results.csv
@@ -27,7 +29,7 @@ The analysis of the election shows that:
 	- Jefferson: 10.5% (38,855)
 	- Denver: 82.8% (306,055)
 	- Arapahoe: 6.7% (24,801)
-- The county with highest voter turnout was Denver
+- The county with highest voter turnout was: Denver
 - The candidates were: 
     - Charles Casper Stockham
     - Diana DeGette
