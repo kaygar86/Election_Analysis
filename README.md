@@ -1,4 +1,4 @@
-# Election Analysis for The Board
+# Election Analysis
 
 # Project Overview
 The Colorado Board of Elections employees Seth and Tom requested an election audit of a recent local congressional election. For the analysis we were tasked with the following:
@@ -14,7 +14,7 @@ The election commission was pleased with our analysis and requested additional d
 - The percentage of votes from each county out of the total count
 - The county with the highest voter turnout 
 
-# Summary 
+# Adjusting Our Code 
 We started by using our existing code and added additional variables for the county data. Given that we were doing the same type of analysis as we did with candidates we simply duplicated the methods we used in the original code. The csv file we used for the original analysis included the county data so we did not need any additional resources. 
 
 ## Step 1: Create County Variables
@@ -61,9 +61,10 @@ Our code included formatting with dashes and new lines that resulted in the foll
 ## Text File Print
 ![Text file results](https://user-images.githubusercontent.com/66224990/166069154-4c01c12b-9937-4255-9b3a-867f10c2cbd9.png)
 
+# Challenge Summary
+Our analysis was for a congressional seat for state of Colorado, which had 3 candidates and 3 counties in the district. The script we used to find the candidate and to find the county analysis was identical, therefore we could change the candidate and county variables to complete an analysis for any type of election. 
+## Change the administrative district
+We could change the county variable to any other type of population sector, for example: city, province, state, country, etc. 
+## Change the voter choices
+We could change the candidate variable to another list of options being voted on, for example: propositions, measures, bills, etc.
 
-## Challenge Overview
-
-## Challenge Summary
-
-* Election-Audit Summary: In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
