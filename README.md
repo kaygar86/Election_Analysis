@@ -1,6 +1,6 @@
 # Election Analysis for The Board
 
-## Project Overview
+# Project Overview
 The Colorado Board of Elections employees Seth and Tom requested an election audit of a recent local congressional election. For the analysis we were tasked with the following:
 
 - Calculate the total number of votes cast. 
@@ -14,21 +14,19 @@ The election commission was pleased with our analysis and requested additional d
 - The percentage of votes from each county out of the total count
 - The county with the highest voter turnout 
 
-
-
-## Summary 
-We started by using our existing code and added additional variables to include the county data. Given that we were doing the same type of analysis as we did with candidates we simply duplicated the methods we used in the original code. The csv we used for the original analysis included the county data so we did not need any additional resources. 
+# Summary 
+We started by using our existing code and added additional variables for the county data. Given that we were doing the same type of analysis as we did with candidates we simply duplicated the methods we used in the original code. The csv file we used for the original analysis included the county data so we did not need any additional resources. 
 
 ## Step 1: Create County Variables
-Our first task was to declare a list and dictionary for the counties that voted. We also needed to delcare variables to track and calculate the vote count for each county. 
+Our first task was to create a list and dictionary for the counties. We also needed to delcare variables to track and calculate the vote count for each county. 
 
 ![Candidate and County lists and dictionaries](https://user-images.githubusercontent.com/66224990/166068736-2c787f27-bf50-4336-a7c8-94bee4ab98f4.png)
 
-## Step: 2 Create If Statement
+## Step: 2 Track County Votes
 ![If county not in list or dictionary](https://user-images.githubusercontent.com/66224990/166069260-f264ce23-f5a7-491a-8a60-ca9ec455095b.png)
 
 
-## Step 3: Create For Loop & Print Results
+## Step 3: Loop Through Data & Print Results
 ![For loop and print statements](https://user-images.githubusercontent.com/66224990/166069263-6d8933f9-44e9-4f51-b52c-bc96a3abc511.png)
 
 # Election Results
