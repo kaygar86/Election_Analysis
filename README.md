@@ -1,7 +1,7 @@
 # Election Analysis
 
 # Project Overview
-The Colorado Board of Elections employees Seth and Tom requested an election audit of a recent local congressional election. For the analysis we were tasked with the following:
+Colorado Board of Elections employees Seth and Tom requested an election audit of a recent local congressional election. For the analysis we were tasked with the following:
 
 - Calculate the total number of votes cast. 
 - Get a complete list of candidates who received votes. 
@@ -15,22 +15,28 @@ The election commission was pleased with our analysis and requested additional d
 - The county with the highest voter turnout 
 
 # Adjusting Our Code 
-We started by using our existing code and added additional variables for the county data. Given that we were doing the same type of analysis as we did with candidates we simply duplicated the methods we used in the original code. The csv file we used for the original analysis included the county data so we did not need any additional resources. 
+We started by using our existing candidate analysis code and added additional variables for the county data. Given that we were doing the same type of analysis as we did with candidates we simply duplicated the methods we used in the original code. The csv file we used for the original analysis included the county data so we did not need any additional resources. 
 
-## Step 1: Create County Variables
+## Step 1: Create Variables
 Our first task was to create a list and dictionary for the counties. We also needed to delcare variables to track and calculate the vote count for each county. 
 
 ![Candidate and County lists and dictionaries](https://user-images.githubusercontent.com/66224990/166068736-2c787f27-bf50-4336-a7c8-94bee4ab98f4.png)
 
-## Step: 2 Track County Votes
+## Step: 2 Track Votes
+Next we created another If Statement within the first For Loop to track the number of times a county name appeared in the voter data. 
 ![If county not in list or dictionary](https://user-images.githubusercontent.com/66224990/166069260-f264ce23-f5a7-491a-8a60-ca9ec455095b.png)
 
+We extracted this data from the second column in the csv, which had the county names. 
+![For Loop County List](https://user-images.githubusercontent.com/66224990/166075646-05f29bab-165b-48fa-a1b1-f62ba2c07703.png)
 
-## Step 3: Loop Through Data & Print Results
+![CSV](https://user-images.githubusercontent.com/66224990/166075508-a0683dd3-a224-4a70-9eb5-39adf42ea316.png)
+
+## Step 3: Calculate Totals & Percentages
+We created another For Loop to get the county from the dictionary we created. It calculated the number of votes for each county and the percentage each county got out of the total votes. The If Statement determined which county had the highest voter turnout.
 ![For loop and print statements](https://user-images.githubusercontent.com/66224990/166069263-6d8933f9-44e9-4f51-b52c-bc96a3abc511.png)
 
 # Election Results
-The analysis of the election showed that:
+When we ran the code we got the following results:
 - There were 369,771 votes cast in the election. 
 - There were 3 counties that had voter turnout: 
 	- Jefferson
@@ -52,19 +58,20 @@ The analysis of the election showed that:
 - The winner of the election was: 
     - Diana Degette, who received 73.8% of the vote and 272,892 votes
 
-Our code included formatting with dashes and new lines that resulted in the following being printed to the terminal and a text file. 
+## Print Formatted Results
+Our final task was to print the results formatted with dashes and new lines to make it easy to read. The code formatting resulted in the following being printed to the terminal and written to a text file election_analysis.txt.
 
-## Terminal Print
+## Terminal
 ![Terminal results](https://user-images.githubusercontent.com/66224990/166069124-5404da2c-8ff7-425c-99ff-6733ad77a753.png)
 
 
-## Text File Print
+## Text File
 ![Text file results](https://user-images.githubusercontent.com/66224990/166069154-4c01c12b-9937-4255-9b3a-867f10c2cbd9.png)
 
 # Challenge Summary
-Our analysis was for a congressional seat for state of Colorado, which had 3 candidates and 3 counties in the district. The script we used to find the candidate and to find the county analysis was identical, therefore we could change the candidate and county variables to complete an analysis for any type of election. 
-## Change the administrative district
-We could change the county variable to any other type of population sector, for example: city, province, state, country, etc. 
-## Change the voter choices
-We could change the candidate variable to another list of options being voted on, for example: propositions, measures, bills, etc.
+Our analysis was for a congressional seat for state of Colorado, which had 3 candidates that voters from 3 counties voted on. The script we used to find the winning candidate and the largest voting county was identical, therefore we could change the candidate and county variables to complete an analysis for any type of election. Here are 2 ways we could modify the code to suit a different election: 
+- Change the administrative district: We could change the county variable to any other type of population sector.
+	-For example: city, province, state, country, etc. 
+- Change the voter choices: We could change the candidate variable to another list of options being voted on. 
+	- For example: propositions, measures, bills, etc.
 
