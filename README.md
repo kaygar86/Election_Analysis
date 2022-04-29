@@ -1,7 +1,7 @@
-# election_analysis
+# Election Analysis for The Board
 
 ## Project Overview
-The Colorado Board of Elections employee has gave us the following tasks to complete the election audit of a recent local congressional election. 
+The Colorado Board of Elections employees Seth and Tom requested an election audit of a recent local congressional election. For the analysis we were tasked with the following:
 
 - Calculate the total number of votes cast. 
 - Get a complete list of candidates who received votes. 
@@ -9,17 +9,30 @@ The Colorado Board of Elections employee has gave us the following tasks to comp
 - Calculate the percentage of votes each candidate won.
 - Determine the winner of the election based on popular vote.
 
-The Board was pleased with our analysis and requested additional data to complete the audit. 
+The election commission was pleased with our analysis and requested additional data to complete the audit. We set out to find the following additional information about the counties who participated in the election: 
 - The voter turnout for each county
-- The percentage of voes from each county out of the total count
+- The percentage of votes from each county out of the total count
 - The county with the highest voter turnout 
 
-## Resources
-- Data Source: election_results.csv
-- Software: Python 3.9.7, Visual Studio Code, 1.66.2
+
 
 ## Summary 
-The analysis of the election shows that:
+We started by using our existing code and added additional variables to include the county data. Given that we were doing the same type of analysis as we did with candidates we simply duplicated the methods we used in the original code. The csv we used for the original analysis included the county data so we did not need any additional resources. 
+
+## Step 1: Create County Variables
+Our first task was to declare a list and dictionary for the counties that voted. We also needed to delcare variables to track and calculate the vote count for each county. 
+
+![Candidate and County lists and dictionaries](https://user-images.githubusercontent.com/66224990/166068736-2c787f27-bf50-4336-a7c8-94bee4ab98f4.png)
+
+## Step: 2 Create If Statement
+![If county not in list or dictionary](https://user-images.githubusercontent.com/66224990/166069260-f264ce23-f5a7-491a-8a60-ca9ec455095b.png)
+
+
+## Step 3: Create For Loop & Print Results
+![For loop and print statements](https://user-images.githubusercontent.com/66224990/166069263-6d8933f9-44e9-4f51-b52c-bc96a3abc511.png)
+
+# Election Results
+The analysis of the election showed that:
 - There were 369,771 votes cast in the election. 
 - There were 3 counties that had voter turnout: 
 	- Jefferson
@@ -40,6 +53,16 @@ The analysis of the election shows that:
     - Raymon Anthony Doane received 3.1% of the vote and 11,606 votes
 - The winner of the election was: 
     - Diana Degette, who received 73.8% of the vote and 272,892 votes
+
+Our code included formatting with dashes and new lines that resulted in the following being printed to the terminal and a text file. 
+
+## Terminal Print
+![Terminal results](https://user-images.githubusercontent.com/66224990/166069124-5404da2c-8ff7-425c-99ff-6733ad77a753.png)
+
+
+## Text File Print
+![Text file results](https://user-images.githubusercontent.com/66224990/166069154-4c01c12b-9937-4255-9b3a-867f10c2cbd9.png)
+
 
 ## Challenge Overview
 
