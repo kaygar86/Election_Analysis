@@ -33,6 +33,7 @@ We extracted this data from the second column in the csv, which had the county n
 
 ## Step 3: Calculate Totals & Percentages
 We created another For Loop to get the county from the dictionary we created. It calculated the number of votes for each county and the percentage each county got out of the total votes. The If Statement determined which county had the highest voter turnout.
+
 ![For loop and print statements](https://user-images.githubusercontent.com/66224990/166069263-6d8933f9-44e9-4f51-b52c-bc96a3abc511.png)
 
 # Election Results
@@ -61,17 +62,21 @@ When we ran the code we got the following results:
 ## Print Formatted Results
 Our final task was to print the results formatted with dashes and new lines to make it easy to read. The code formatting resulted in the following being printed to the terminal and written to a text file election_analysis.txt.
 
-## Terminal
+## Terminal Output
 ![Terminal results](https://user-images.githubusercontent.com/66224990/166069124-5404da2c-8ff7-425c-99ff-6733ad77a753.png)
 
 
-## Text File
+## Text File Output
 ![Text file results](https://user-images.githubusercontent.com/66224990/166069154-4c01c12b-9937-4255-9b3a-867f10c2cbd9.png)
 
 # Challenge Summary
-Our analysis was for a congressional seat for state of Colorado, which had 3 candidates that voters from 3 counties voted on. The script we used to find the winning candidate and the largest voting county was identical, therefore we could change the candidate and county variables to complete an analysis for any type of election. Here are 2 ways we could modify the code to suit a different election: 
-- Change the administrative district: We could change the county variable to any other type of population sector.
-	-For example: city, province, state, country, etc. 
-- Change the voter choices: We could change the candidate variable to another list of options being voted on. 
-	- For example: propositions, measures, bills, etc.
+Our analysis was for a congressional seat election for state of Colorado, which had 3 candidates that voters from 3 counties. The script we used to find the winning candidate and the largest voting county was identical, therefore we could change the variables and the f string results text to complete an analysis for any type of election. Here are the ways we could modify the code to suit a different election: 
+
+Change the administrative district: We could change the county variable to any other type of population sector (examples: city, state, country, etc.). This would not require any change to how the largest voting sector is determined. 
+
+Change the voter choices: We could change the candidate variable to another list of options being voted on (examples: propositions, measures, etc.). The data for an election of proposition or measure may be presented differently from that of a candidate, with a Yes or No indicating the winner instead of a multiple choice, so we may also have to tweak how the winning choice is determined. 
+
+These modificationss would require us to also alter the variables and results printout text for each election, which may become cumbersome, but they would allow us to work with different types of data that may not match the one we used in this analysis. 
+
+If we assume we would be working with candidate election data organized in the same way as the csv file we worked with (0 = ballot number, 1 = popultaion sector, 2 = candidate name) then we could write code with the more generic variables being pulled from the csv and then adjust the results f string so that it pulls the header of the csv file we're working with (candidate, county, state, etc). We would just need to make another variable for the header line that would replace where we currently refer to the county. 
 
