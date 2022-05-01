@@ -59,7 +59,7 @@ When we ran the code we got the following results:
 - The winner of the election was: 
     - Diana Degette, who received 73.8% of the vote and 272,892 votes
 
-## Print Formatted Results
+## Step 4: Print Formatted Results
 Our final task was to print the results formatted with dashes and new lines to make it easy to read. The code formatting resulted in the following being printed to the terminal and written to a text file election_analysis.txt.
 
 ## Terminal Output
@@ -72,7 +72,7 @@ Our final task was to print the results formatted with dashes and new lines to m
 # Challenge Summary
 Our analysis was for a congressional seat election for state of Colorado, which had 3 candidates that voters from 3 counties. The script we used to find the winning candidate and the largest voting county was identical, therefore we could change the variables and the f string results text to complete an analysis for any type of election. Here are the ways we could modify the code to suit a different election:
 
-If we assume we would be working with candidate election data organized in the same way as the csv file we worked with (0 = ballot number, 1 = popultaion sector, 2 = candidate name) then we could write code with the more generic variables being pulled from the csv and then adjust the results f string so that it pulls the header of the csv file we're working with (candidate, county, state, etc). We would just need to make another variable for the header line that would replace where we currently refer to the county.  
+If we assume we would be working with candidate election data organized in the same way as the csv file we worked with (0 = ballot number, 1 = popultaion sector, 2 = candidate name) then we could write code with the more generic variables (example: voter_options and voting_sector) and then adjust the results f string so that it pulls the header of the csv file we're working with (candidate, county, state, etc). We would just need to make another variable for the header line that would replace where we currently refer to the county.  
 
 If we are working with a different type of election data, for example one with propositions or measures instead of candidates then we would need to make additional changes to the code. Propositions and meausres are voted on with a Yes or No vote instead of a multiple choice between candidates so we would need to reflect that with a readout of each prop or measure and the percent of votes they got in favor or against. 
 
