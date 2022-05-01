@@ -23,7 +23,8 @@ Our first task was to create a list and dictionary for the counties. We also nee
 ![Candidate and County lists and dictionaries](https://user-images.githubusercontent.com/66224990/166068736-2c787f27-bf50-4336-a7c8-94bee4ab98f4.png)
 
 ## Step: 2 Track Votes
-Next we created another If Statement within the first For Loop to track the number of times a county name appeared in the voter data. 
+Next we created another If Statement within the first For Loop to track the number of times a county name appeared in the voter data.
+
 ![If county not in list or dictionary](https://user-images.githubusercontent.com/66224990/166069260-f264ce23-f5a7-491a-8a60-ca9ec455095b.png)
 
 We extracted this data from the second column in the csv, which had the county names. 
